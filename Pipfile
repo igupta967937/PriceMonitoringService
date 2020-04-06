@@ -23,6 +23,7 @@ soupsieve = "*"
 urllib3 = "*"
 werkzeug = "*"
 dnspython = "*"
+gunicorn= "*"
 
 [requires]
-python_version = "3.8"
+python_version = "3.0"
