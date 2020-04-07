@@ -1,30 +1,40 @@
+<!--
+File name:    register.html
+Author:       Martin Dwyer
+Date:         April 7, 2020
+Description:  This file takes in username and password for new user registration
+License:      The application is provide herein under the GNU General Public License, a free copyleft license for
+              software.  A copy of this license has been provided in the root folder of this application.
+-->
+
+<!-- Extending base.html for sources, header, navigation bar and footer -->
 {% extends "base.html" %}
 
+<!-- To appear in the block_content div section of base.html -->
 {% block content %}
-    <header>
-        <h1>
+<header>
+    <h1>
         Register
-        </h1>
-        <section class="create-alert-form">
-            <form method="post" autocomplete="off">
+    </h1>
+
+    <!-- User input form for new user registration -->
+    <section class="user-input-form">
+        <form method="post" autocomplete="off">
             <div>
                 <div class="form-group">
                     <label for="email">Email Address</label>
-                    <input class="form-control" value = "" type="text" id="email" name="email" placeholder="fred@flintstone.com" />
+                    <input class="form-control" value="" type="text" id="email" name="email"
+                           placeholder="fred@flintstone.com"/>
                 </div>
                 <div class="form-group">
                     <label for="password">Item URL</label>
-                    <input class="form-control" value= "" type="password" id="password" name="password" aria-describedby="passwordHelp" placeholder="Enter Password" />
+                    <input class="form-control" value="" type="password" id="password" name="password"
+                           aria-describedby="passwordHelp" placeholder="Enter Password"/>
                 </div>
-                <button type="submit" class="btn btn-primary" disabled>Register</button>
-
-
+                <button type="submit" class="btn btn-primary">Register</button>
             </div>
-
-
-
-            </form>
-        </section>
-    </header>
+        </form>
+    </section>
+</header>
 
 {% endblock %}

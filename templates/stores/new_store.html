@@ -1,8 +1,29 @@
+<!--
+File name:    new_store.html
+Author:       Martin Dwyer
+Date:         April 7, 2020
+Description:  This file collects admin user input in order to create a new store location option.
+License:      The application is provide herein under the GNU General Public License, a free copyleft license for
+              software.  A copy of this license has been provided in the root folder of this application.
+-->
+
+<!-- Extending base.html for sources, header, navigation bar, and footer -->
 {% extends "base.html" %}
+
+<!-- Content to appear in block_content div of base.html -->
 {% block content %}
+
+    <!-- Page header with sign out option -->
     <div class="page-header">
         <h1>Create Store</h1>
+       <div id="sign-out">
+            <a class="btn btn-success" href="{{ url_for('users.logout_user') }}">Sign Out</a>
+       </div>
+        <div class="clear-float"></div>
     </div>
+
+
+    <!-- Form for adding new stores -->
     <div class="form">
         <form method="post">
             <div class="form-group">

@@ -1,10 +1,25 @@
+<!--
+File name:    home.html
+Author:       Martin Dwyer
+Date:         April 7, 2020
+Description:  This file provides a structure for the application home page including a brief description and
+              directions for the user to sign in or sign up for the service.
+License:      The application is provide herein under the GNU General Public License, a free copyleft license for
+              software.  A copy of this license has been provided in the root folder of this application.
+-->
+
+<!-- Each page of the application begins by extending base.html -->
 {% extends "base.html" %}
+
+<!-- Page content to be inserted in the block_content div section of base.html -->
 {% block content %}
     <div class="row">
+
+        <!-- Left side of full screen home page.  Brief description, sign up, or sign in.  -->
         <div id="home_jumbo" class="col-lg jumbotron">
             <div id="home_jumbo_content">
                 <img src="{{ url_for('static', filename='images/shopping-cart.png') }}">
-                <h1 class="logo-font">BargainBuyClub.com</h1>
+                <h1>PriceMonitorService</h1>
                 <p class="lead">Helping you get the best price for all of your online shopping needs.</p>
                 <hr class="my-4"/>
                 <p>Here's how it works:</p>
@@ -17,22 +32,18 @@
                 <a class="btn btn-primary btn-large btn-success" href="{{ url_for('users.login_user') }}">Sign In</a>
             </div>
         </div>
+
+        <!-- Right side of full screen home page.  How the program works and sample price alerts. -->
         <div id="home_alerts" class="col-lg jumbotron">
-
-
-            <h2 class="logo-font">Set the price you want to pay!</h2>
-
+            <h4>Set the price you want to pay!</h4>
             <p>Tell us the product and the price you want to pay. We will track online stores and send you an email when
                 your bargain is ready. Once items are set up, prices are tracked, and logged in users can see their
                 items, the latest price for the item on the website, and the price at which the user will received an
                 alert. Users also receive a link on each report to go and purchase the item.</p>
-
             <p>To illustrate, here are some items we are tracking from <a href="https://www.bestbuy.com"><img src="{{ url_for('static', filename='images/220px-Best_Buy_Logo.svg.png') }}"></a> online.
             </p>
-
             <table>
                 {% for alert in alerts %}
-
                     <tr>
                         <td colspan="3"><h6>{{ alert.name }}</h6></td>
                     </tr>
@@ -41,10 +52,8 @@
                         <td>Alert price ${{ alert.price_limit }}</td>
                         <td><a href="{{ alert.item.url }}" target="_blank">Buy Now</a></td>
                     </tr>
-
                 {% endfor %}
             </table>
-
         </div>
     </div>
 

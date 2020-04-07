@@ -1,8 +1,28 @@
+<!--
+File name:    edit_store.html
+Author:       Martin Dwyer
+Date:         April 7, 2020
+Description:  This file prompts the user for new details to update specific stores
+License:      The application is provide herein under the GNU General Public License, a free copyleft license for
+              software.  A copy of this license has been provided in the root folder of this application.
+-->
+
+<!-- Extending base.html for sources, header, navigation bar, and footer -->
 {% extends "base.html" %}
+
+<!-- Content to appear in div with id block_content in base.html -->
 {% block content %}
+
+    <!-- Page Header -->
     <div class="page-header">
         <h1>Edit Store</h1>
+        <div id="sign-out">
+            <a class="btn btn-success" href="{{ url_for('users.logout_user') }}">Sign Out</a>
+       </div>
+        <div class="clear-float"></div>
     </div>
+
+    <!-- Form for updating store details -->
     <div class="form">
         <form method="post">
             <div class="form-group">

@@ -1,17 +1,33 @@
+<!--
+File name:    base.html
+Author:       Martin Dwyer
+Date:         April 7, 2020
+Description:  This file provides a base structure for all of the website pages include header, navigation bar, and
+              footer.  Each page content will appear in the div element with the id block_content.
+License:      The application is provide herein under the GNU General Public License, a free copyleft license for
+              software.  A copy of this license has been provided in the root folder of this application.
+-->
 <!DOCTYPE html>
 <html lang="en">
+<!-- head section including important links to bootstrap and site styles as well as google fonts used for the application -->
 <head>
     <meta charset="UTF-8">
-    <title>BargainBuyClub.com</title>
+    <title>PriceMonitorService</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
-    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+
 </head>
+
+<!-- Web page content begins here -->
 <body>
 <div class="content container-fluid mt-2">
+
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
-        <a class="navbar-brand" href="/"><div class="logo-font">BargainBuyClub.com</div></a>
+        <a class="navbar-brand" href="/">
+            <div><h4>PriceMonitorService</h4></div>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -25,15 +41,19 @@
 
         </div>
     </nav>
+
+    <!-- If an error message has been passed as parameter, it will be displayed here -->
     {% with messages = get_flashed_messages(with_categories=true) %}
-        {% if messages %}
-            {% for category, message in messages %}
-                <div class="alert alert-{{ category }}" role="alert">
-                    {{ message }}
-                </div>
-            {% endfor %}
-        {% endif %}
+    {% if messages %}
+    {% for category, message in messages %}
+    <div class="alert alert-{{ category }}" role="alert">
+        {{ message }}
+    </div>
+    {% endfor %}
+    {% endif %}
     {% endwith %}
+
+    <!-- Main page content appears here -->
     <div id="block_content" class="mt-3">
         {% block content %}
 
@@ -42,6 +62,8 @@
     </div>
 
 </div>
+
+<!-- Loading JavaScript, jQuery, and Popper sources -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>

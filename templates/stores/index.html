@@ -1,47 +1,61 @@
+<!--
+File name:    index.html
+Author:       Martin Dwyer
+Date:         April 7, 2020
+Description:  This file provides the default view for the /stores view in the application.
+License:      The application is provide herein under the GNU General Public License, a free copyleft license for
+              software.  A copy of this license has been provided in the root folder of this application.
+-->
+
+<!-- Extending base.html for sources, header, navigation bar, and footer -->
 {% extends "base.html" %}
 
+<!-- Content to appear in block_content div section of base.html -->
 {% block content %}
-    <header>
+
+<!-- Page heading to provide page title and sign out option for users -->
+<div class="page-heading">
     <div id="page-title">
-    Stores
+        Stores
     </div>
     <div id="sign-out">
-    <a class="btn btn-success" href="{{ url_for('users.logout_user') }}">Sign Out</a>
-        </div>
-    <div class="clear-float"></div>
-</header>
-    <div class="list-group mb-3">
-        {% for store in stores %}
-
-            <div class="list-group-item">
-
-                <h4 class="list-group-item-heading">{{ store.name }}</h4>
-                <p class="list-group-item-text">All URLs in this store should start with
-                    <strong>{{ store.url_prefix }}</strong></p>
-                {% if session['email'] == admin %}
-                    <a class="btn btn-secondary" style="width:75px;"
-                       href="{{ url_for('stores.edit_store',store_id=store._id) }}">
-                        Edit
-                    </a>
-                    <a class="btn btn-danger" style="width:75px;"
-                       href="{{ url_for('stores.delete_store',store_id=store._id) }}">
-                        Delete
-                    </a>
-                {% endif %}
-            </div>
-        {% endfor %}
-
+        <a class="btn btn-success" href="{{ url_for('users.logout_user') }}">Sign Out</a>
     </div>
-    {% if session['email'] == config.ADMIN %}
-        <div>
-            <a class="btn btn-success" href="{{ url_for('stores.create_store') }}"><span
-                    class="glyphicon glyphicon-plus"></span> Create new</a>
+    <div class="clear-float"></div>
+</div>
 
+<!-- Provides a list of available stores -->
+<div class="list-group mb-3">
+    {% for store in stores %}
 
-            <a class="btn btn-success" href="{{ url_for('users.logout_user') }}">Sign Out</a>
+    <div class="list-group-item">
 
+        <h4 class="list-group-item-heading">{{ store.name }}</h4>
+        <p class="list-group-item-text">All URLs in this store should start with
+            <strong>{{ store.url_prefix }}</strong></p>
 
-        </div>
-    {% endif %}
+        <!-- If user is ADMIN provide option to edit or delete stores -->
+        {% if session['email'] == admin %}
+        <a class="btn btn-secondary" style="width:75px;"
+           href="{{ url_for('stores.edit_store',store_id=store._id) }}">
+            Edit
+        </a>
+        <a class="btn btn-danger" style="width:75px;"
+           href="{{ url_for('stores.delete_store',store_id=store._id) }}">
+            Delete
+        </a>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
+
+<!-- If user is ADMIN provide options to add stores -->
+{% if session['email'] == admin %}
+<div>
+    <a class="btn btn-success" href="{{ url_for('stores.create_store') }}"><span
+            class="glyphicon glyphicon-plus"></span> Create new</a>
+
+</div>
+{% endif %}
 
 {% endblock %}

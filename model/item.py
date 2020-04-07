@@ -38,7 +38,9 @@ class Item(Model):
         content = response.content
         soup = BeautifulSoup(content, "html.parser")
         element = soup.find(self.tag_name, self.query)
-
+        print(self.tag_name)
+        print(self.query)
+        print(element)
         string_price = element.text.strip()
 
         pattern = re.compile(r"(\d+.\d+)")

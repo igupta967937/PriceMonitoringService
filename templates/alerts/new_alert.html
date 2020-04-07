@@ -1,37 +1,52 @@
+<!--
+File name:    new_alert.html
+Author:       Martin Dwyer
+Date:         April 7, 2020
+Description:  This file provides a form for collecting input related to new alerts
+License:      The application is provide herein under the GNU General Public License, a free copyleft license for
+              software.  A copy of this license has been provided in the root folder of this application.
+-->
+
+<!-- Extending base.html for sources, header, navigation bar, and footer -->
 {% extends "base.html" %}
 
+<!-- Content below appears in the div with id block_content from base.html -->
 {% block content %}
-    <header>
-        <h1>
+<div id="page-title">
+    <h1>
         Create Alert
-        </h1>
-        <section class="create-alert-form">
-            <form method="post">
-            <div>
-                <div class="form-group">
-                    <label for="name">Alert Name</label>
-                    <input class="form-control" type="text" id="name" name="name" placeholder="Type alert name here" />
-                </div>
-                <div class="form-group">
-                    <label for="item_url">Item URL</label>
-                    <input class="form-control" type="text" id="item_url" name="item_url" aria-describedby="itemURLHelp" placeholder="https:// ..." />
-                    <small class="form-text text-muted" id="itemURLHelp">Copy and paste the MongoDb item id here</small>
-                </div>
-                 <div class="form-group">
-                    <label for="query">Price Limit</label>
-                    <input class="form-control" type="text" id="price_limit" name="price_limit" aria-describedby="priceLimitHelp" placeholder='e.g. 150.00' />
-                    <small class="form-text text-muted" id="priceLimitHelp">Under what price would you like to be notified?</small>
-                </div>
+    </h1>
+    <div id="sign-out">
+        <a class="btn btn-success" href="{{ url_for('users.logout_user') }}">Sign Out</a>
+    </div>
+    <div class="clear-float"></div>
+</div>
 
-                     <button type="submit" class="btn btn-primary">Create</button>
-
-
+<!-- Form for creating new alert -->
+<section class="create-alert-form">
+    <form method="post">
+        <div>
+            <div class="form-group">
+                <label for="name">Alert Name</label>
+                <input class="form-control" type="text" id="name" name="name" placeholder="Type alert name here"/>
             </div>
+            <div class="form-group">
+                <label for="item_url">Item URL</label>
+                <input class="form-control" type="text" id="item_url" name="item_url" aria-describedby="itemURLHelp"
+                       placeholder="https:// ..."/>
+                <small class="form-text text-muted" id="itemURLHelp">Copy and paste the MongoDb item id here</small>
+            </div>
+            <div class="form-group">
+                <label for="query">Price Limit</label>
+                <input class="form-control" type="text" id="price_limit" name="price_limit"
+                       aria-describedby="priceLimitHelp" placeholder='e.g. 150.00'/>
+                <small class="form-text text-muted" id="priceLimitHelp">Under what price would you like to be
+                    notified?</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Create</button>
+        </div>
+    </form>
+</section>
 
-
-
-            </form>
-        </section>
-    </header>
 
 {% endblock %}
