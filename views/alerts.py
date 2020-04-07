@@ -39,21 +39,12 @@ def new_alert():
     # After saving the new alert from the POST, user redirected to their alerts list at '/'
     if request.method == 'POST':
         alert_name = request.form['name']
-        print(alert_name)
         item_url = request.form['item_url']
-        print(item_url)
         price_limit = float(request.form['price_limit'])
-        print(price_limit)
         store = Store.find_by_url(item_url)
-        print(store.tag_name)
-        print(store.query)
         item = Item(item_url, store.tag_name, store.query)
-        print(item.url)
-        print(item.tag_name)
         item.load_price()
-        print(item.price)
         item.save_to_mongo()
-
         Alert(alert_name, item._id, price_limit,session['email']).save_to_mongo()
 
         return redirect(url_for('.index'))

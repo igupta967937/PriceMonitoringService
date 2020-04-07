@@ -1,12 +1,19 @@
+'''
+File name:    alert.py
+Author:       Martin Dwyer
+Date:         April 7, 2020
+Description:  This file establishes the Alert class with attributes and methods including the methods used to get
+              the current price of a product and to send alerts by email when appropriate.
+License:      The application is provide herein under the GNU General Public License, a free copyleft license for
+              software.  A copy of this license has been provided in the root folder of this application.
+'''
 import uuid
 from dataclasses import dataclass, field
 from typing import Dict
-
 from common.database import Database
 from model.item import Item
 from model.model import Model
 from model.user.user import User
-
 from libs.mailgun import Mailgun
 
 

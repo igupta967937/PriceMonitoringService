@@ -2,36 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d189bee-9774-4bcc-9dc0-88b66d6ebbae" name="Default Changelist" comment="Environment update">
-      <change beforePath="$PROJECT_DIR$/.idea/BargainBuyClub.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BargainBuyClub.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alert_updater.py" beforeDir="false" afterPath="$PROJECT_DIR$/alert_updater.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/item.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/item.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/user/decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/user/decorators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/1.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/3.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/4.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/5.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/alerts/edit_alert.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/alerts/edit_alert.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/alerts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/alerts/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/alerts/new_alert.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/alerts/new_alert.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/stores/edit_store.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stores/edit_store.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/stores/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stores/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/stores/new_store.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stores/new_store.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/users/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/users/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/users/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/users/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/alert.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/alert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/alerts.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/alerts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/stores.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/stores.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/users.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -304,6 +278,7 @@
       <workItem from="1586190840138" duration="1967000" />
       <workItem from="1586193595255" duration="1380000" />
       <workItem from="1586267959349" duration="17570000" />
+      <workItem from="1586289677626" duration="1958000" />
     </task>
     <task id="LOCAL-00001" summary="Environment update">
       <created>1586176120912</created>
@@ -331,22 +306,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="277" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586270154183" />
-    <state width="938" height="348" key="GridCell.Tab.0.bottom" timestamp="1586287242408">
+    <state width="1495" height="274" key="GridCell.Tab.0.bottom" timestamp="1586291641804">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586287242408" />
-    <state width="938" height="348" key="GridCell.Tab.0.center" timestamp="1586287242407">
+    <state width="1495" height="274" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586291641804" />
+    <state width="1495" height="274" key="GridCell.Tab.0.center" timestamp="1586291641804">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586287242407" />
-    <state width="938" height="348" key="GridCell.Tab.0.left" timestamp="1586287242407">
+    <state width="1495" height="274" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586291641804" />
+    <state width="1495" height="274" key="GridCell.Tab.0.left" timestamp="1586291641804">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586287242407" />
-    <state width="938" height="348" key="GridCell.Tab.0.right" timestamp="1586287242407">
+    <state width="1495" height="274" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586291641804" />
+    <state width="1495" height="274" key="GridCell.Tab.0.right" timestamp="1586291641804">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586287242407" />
+    <state width="1495" height="274" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586291641804" />
     <state width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1586287242408">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -367,10 +342,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="463" y="165" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586270220609" />
-    <state x="668" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1586267960195">
+    <state x="668" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1586289680365">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="668" y="347" key="com.intellij.ide.util.TipDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586267960195" />
+    <state x="668" y="347" key="com.intellij.ide.util.TipDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586289680365" />
     <state x="797" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1586272564428">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -382,6 +357,6 @@
     <SUITE FILE_PATH="coverage/BargainBuyClub$app.coverage" NAME="app Coverage Results" MODIFIED="1581618793955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PricingService$__init____1_.coverage" NAME="__init__ (1) Coverage Results" MODIFIED="1586176129060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/BargainBuyClub$BargainBuyClub.coverage" NAME="BargainBuyClub Coverage Results" MODIFIED="1581415991297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
-    <SUITE FILE_PATH="coverage/PriceMonitoringService$__init____1_.coverage" NAME="__init__ (1) Coverage Results" MODIFIED="1586286836015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PriceMonitoringService$__init____1_.coverage" NAME="__init__ (1) Coverage Results" MODIFIED="1586291500551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
