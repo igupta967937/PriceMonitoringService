@@ -1,3 +1,12 @@
+'''
+File name:    database.py
+Author:       Martin Dwyer
+Date:         April 7, 2020
+Description:  This file establishes the Database class which provides connection to a MongoDB database and methods
+              for inserting, finding, and deleting database objects.
+License:      The application is provide herein under the GNU General Public License, a free copyleft license for
+              software.  A copy of this license has been provided in the root folder of this application.
+'''
 import pymongo
 import os
 from typing import Dict

@@ -1,8 +1,16 @@
+'''
+File name:    mailgun.py
+Author:       Martin Dwyer
+Date:         April 7, 2020
+Description:  This file establishes the Mailgun and MailgunException classes which are utilized along with the
+              Mailgun API in order to send emails to users when price limit levels have been reached.
+License:      The application is provide herein under the GNU General Public License, a free copyleft license for
+              software.  A copy of this license has been provided in the root folder of this application.
+'''
 import os
 from typing import List
 from requests import Response, post
 from dotenv import load_dotenv
-
 
 class MailgunException(Exception):
     def __init__(self,message:str):
