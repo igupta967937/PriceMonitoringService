@@ -10,6 +10,8 @@ License:      The application is provide herein under the GNU General Public Lic
               software.  A copy of this license has been provided in the root folder of this application.
 '''
 from flask import Flask, render_template,request
+
+from common.database import Database
 from model.alert import Alert
 from views.alerts import alert_blueprint
 from views.stores import store_blueprint

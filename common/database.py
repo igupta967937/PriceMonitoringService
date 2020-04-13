@@ -10,12 +10,17 @@ License:      The application is provide herein under the GNU General Public Lic
 import pymongo
 import os
 from typing import Dict
+from dotenv import load_dotenv
+
 
 class Database:
 
-    URI = "mongodb://127.0.0.1:27017"
-    CLIENT = pymongo.MongoClient(URI)
-    DATABASE = CLIENT['BBC']
+    # Loading environment variables to be used in connection
+    load_dotenv()
+
+    # Setting client and database to be used
+    CLIENT = pymongo.MongoClient(os.getenv("MONGODB_URI"))
+    DATABASE = CLIENT.bbc
 
     @staticmethod
     def insert(collection: str, data: Dict):

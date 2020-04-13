@@ -39,12 +39,11 @@ class User(Model):
             raise UserErrors.InvalidEmailERror('The email does not have the right format.')
 
         # Next check to see if the email address is already a registered user
-        try:
-            user = cls.find_by_email(email)
+        if (cls.find_by_email(email) != None):
             raise UserErrors.UserAlreadyRegisteredError('The email you used to register already exists.')
-
-        # If not a registered user then create the user and save to Mongo DB
-        except UserErrors.UserNotFoundError:
+        else:
+            user = User(email,Utils.hash_password(password))
+            print(user)
             User(email,Utils.hash_password(password)).save_to_mongo()
 
         return True

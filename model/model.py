@@ -46,7 +46,10 @@ class Model(metaclass=ABCMeta):
     # Method finds one object of class T with json search criteria
     @classmethod
     def find_one_by(cls:Type[T],attribute:str,value:Union[str,Dict]) -> T:
-        return cls(**Database.find_one(cls.collection,{attribute:value}))
+        if Database.find_one(cls.collection,{attribute:value}) is None:
+            return None
+        else:
+            return cls(**Database.find_one(cls.collection,{attribute:value}))
 
     # Method final all objects meeting a single search criteria
     @classmethod
