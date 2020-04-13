@@ -11,7 +11,6 @@ License:      The application is provide herein under the GNU General Public Lic
 '''
 from flask import Flask, render_template,request
 
-from common.database import Database
 from model.alert import Alert
 from views.alerts import alert_blueprint
 from views.stores import store_blueprint

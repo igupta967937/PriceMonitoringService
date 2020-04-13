@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d189bee-9774-4bcc-9dc0-88b66d6ebbae" name="Default Changelist" comment="Environment update" />
+    <list default="true" id="2d189bee-9774-4bcc-9dc0-88b66d6ebbae" name="Default Changelist" comment="Environment update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/beautifulsoup4-4.8.2.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/beautifulsoup4-4.8.2.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/beautifulsoup4-4.8.2.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/beautifulsoup4-4.8.2.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/beautifulsoup4-4.8.2.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/builder/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/builder/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/builder/_html5lib.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/builder/_html5lib.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/builder/_htmlparser.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/builder/_htmlparser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/builder/_lxml.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/builder/_lxml.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/dammit.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/dammit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/diagnose.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/diagnose.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/element.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/element.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/formatter.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/formatter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/testing.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -242,7 +262,9 @@
       <workItem from="1586289677626" duration="1958000" />
       <workItem from="1586373029386" duration="6792000" />
       <workItem from="1586381251772" duration="614000" />
-      <workItem from="1586782043140" duration="10168000" />
+      <workItem from="1586782043140" duration="11599000" />
+      <workItem from="1586797215263" duration="1660000" />
+      <workItem from="1586800824799" duration="1734000" />
     </task>
     <task id="LOCAL-00001" summary="Environment update">
       <created>1586176120912</created>
@@ -262,6 +284,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Environment update" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2472" y="181" width="816" height="723" key="#Intentions" timestamp="1586796966940">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2472" y="181" width="816" height="723" key="#Intentions/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1586796966940" />
     <state x="321" y="199" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586791926018">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -275,26 +301,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="277" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586270154183" />
-    <state width="1492" height="245" key="GridCell.Tab.0.bottom" timestamp="1586795748259">
+    <state width="1133" height="245" key="GridCell.Tab.0.bottom" timestamp="1586800308220">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1492" height="245" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586795748259" />
-    <state width="1493" height="245" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1586791019680" />
-    <state width="1492" height="245" key="GridCell.Tab.0.center" timestamp="1586795748258">
+    <state width="1133" height="245" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586800308220" />
+    <state width="1134" height="245" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1586797187320" />
+    <state width="1133" height="245" key="GridCell.Tab.0.center" timestamp="1586800308219">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1492" height="245" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586795748258" />
-    <state width="1493" height="245" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1586791019680" />
-    <state width="1492" height="245" key="GridCell.Tab.0.left" timestamp="1586795748258">
+    <state width="1133" height="245" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586800308219" />
+    <state width="1134" height="245" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1586797187320" />
+    <state width="1133" height="245" key="GridCell.Tab.0.left" timestamp="1586800308219">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1492" height="245" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586795748258" />
-    <state width="1493" height="245" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1586791019679" />
-    <state width="1492" height="245" key="GridCell.Tab.0.right" timestamp="1586795748258">
+    <state width="1133" height="245" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586800308219" />
+    <state width="1134" height="245" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1586797187319" />
+    <state width="1133" height="245" key="GridCell.Tab.0.right" timestamp="1586800308220">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1492" height="245" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586795748258" />
-    <state width="1493" height="245" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1586791019680" />
+    <state width="1133" height="245" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586800308220" />
+    <state width="1134" height="245" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1586797187320" />
     <state width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1586287242408">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -311,14 +337,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="938" height="348" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586287242408" />
-    <state x="463" y="165" key="SettingsEditor" timestamp="1586270220609">
+    <state x="482" y="178" key="SettingsEditor" timestamp="1586802576457">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="463" y="165" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586270220609" />
-    <state x="668" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1586782317929">
+    <state x="482" y="178" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586802576457" />
+    <state x="2383" y="165" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1586797144326" />
+    <state x="668" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1586800825760">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="668" y="347" key="com.intellij.ide.util.TipDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586782317929" />
+    <state x="668" y="347" key="com.intellij.ide.util.TipDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586800825760" />
+    <state x="2588" y="347" key="com.intellij.ide.util.TipDialog/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1586797409430" />
     <state x="313" y="99" width="1401" height="769" key="dock-window-1" timestamp="1586789559709">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -329,6 +357,7 @@
     <state x="797" y="240" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586272564428" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PriceMonitoringService$flask_app.coverage" NAME="flask_app Coverage Results" MODIFIED="1586800225408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/BargainBuyClub$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1586171323273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/BargainBuyClub$alert_updater.coverage" NAME="alert_updater Coverage Results" MODIFIED="1586171923838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PriceMonitoringService$database.coverage" NAME="database Coverage Results" MODIFIED="1586789859208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
