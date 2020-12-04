@@ -34,8 +34,9 @@ License:      The application is provide herein under the GNU General Public Lic
             <div class="form-group">
                 <label for="item_url">Item URL</label>
                 <input class="form-control" type="text" id="item_url" name="item_url" aria-describedby="itemURLHelp"
-                       placeholder="https:// ..."/>
-                <small class="form-text text-muted" id="itemURLHelp">Copy and paste the MongoDb item id here</small>
+                       placeholder="https://www.shopdisney.com/ ..." pattern="https://www.shopdisney.com/.+"
+                       title="URL must begin with https://www.shopdisney.com"/>
+                <small class="form-text text-muted" id="itemURLHelp">Copy and paste the product url here</small>
             </div>
             <div class="form-group">
                 <label for="query">Price Limit</label>
@@ -47,6 +48,9 @@ License:      The application is provide herein under the GNU General Public Lic
             <button type="submit" class="btn btn-primary">Create</button>
         </div>
     </form>
+
+
+    <div style="margin-top: 2em;">This demo version supports only products from <a href="https://www.shopdisney.com" target="_blank"><img src="{{ url_for('static', filename='/images/shop-disney.png') }}" height="30"></a></div>
 </section>
 </div>
 

@@ -8,6 +8,7 @@ License:      The application is provide herein under the GNU General Public Lic
 '''
 from flask import Blueprint,render_template,request,redirect,url_for,session
 from model.alert import Alert
+from model.user.user import User
 from model.store import Store
 from model.item import Item
 from model.user.decorators import requires_login

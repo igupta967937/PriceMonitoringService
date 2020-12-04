@@ -53,7 +53,8 @@ class User(Model):
         return {
             '_id': self._id,
             'email': self.email,
-            'password': self.password
+            'password': self.password,
+            'admin': self.admin
         }
 
     # Method returns True if email and password are valid

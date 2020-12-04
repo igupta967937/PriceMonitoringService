@@ -18,6 +18,7 @@ store_blueprint = Blueprint('stores', __name__)
 # Handles requests routed to /stores/ and requires_login from model.users.decorators
 @store_blueprint.route('/')
 @requires_login
+@requires_admin
 def index():
 
     # Get a list of all stores from database
