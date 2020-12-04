@@ -48,8 +48,8 @@ License:      The application is provide herein under the GNU General Public Lic
                         <td colspan="3"><h6>{{ alert.name }}</h6></td>
                     </tr>
                     <tr>
-                        <td>Price today ${{ alert.item.price }}</td>
-                        <td>Alert price ${{ alert.price_limit }}</td>
+                        <td>Price today {{ "$%.2f"|format(alert.item.price) }}</td>
+                        <td>Alert price {{ "$%.2f"|format(alert.price_limit) }}</td>
                         <td><a href="{{ alert.item.url }}" target="_blank"><img src="{{ url_for('static', filename='/images/buy-now.png') }}" height="40"></a></td>
                     </tr>
                 {% endfor %}

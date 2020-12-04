@@ -33,8 +33,8 @@ License:      The application is provide herein under the GNU General Public Lic
                     <a href="{{ alert.item.url }}"><img src="{{ url_for('static', filename='/images/buy-now.png') }}" height="50"></a><br>
                 </div>
                 <div class="alert-price-info" style="float:left;">
-                    Last price ${{ alert.item.price }}<br>
-                    Alert price ${{ alert.price_limit }}
+                    Last price {{ "$%.2f"|format(alert.item.price) }}<br>
+                    Alert price{{ "$%.2f"|format(alert.price_limit) }}
                 </div>
                 <div class="alert-buttons" style="clear:both;">
                     <a class="btn btn-secondary" style="width:75px;" href="{{ url_for('alerts.edit_alert',alert_id=alert._id) }}">
