@@ -12,44 +12,51 @@ License:      The application is provide herein under the GNU General Public Lic
 
 <!-- Content to appear in div with id block_content -->
 {% block content %}
-
 <!-- Page heading and sign out option -->
-<div id="page-title">
-    <h1>Alerts</h1>
-    <div id="sign-out">
-        <a class="btn btn-success" href="{{ url_for('users.logout_user') }}">Sign Out</a>
-    </div>
-    <div class="clear-float"></div>
-</div>
-
-<!-- List of alert items -->
-<section>
-    <div class="list-group mb3" style="margin-bottom: 30px;">
-        {% for alert in alerts %}
-        <div class="list-group-item">
-            <h4>{{ alert.name }}</h4>
-            <p>
-                <a href="{{ alert.item.url }}">{{ alert.item_id }}</a><br>
-                Last price ${{ alert.item.price }}<br>
-                Alert price ${{ alert.price_limit }}
-            </p>
-            <a class="btn btn-secondary" style="width:75px;"
-               href="{{ url_for('alerts.edit_alert',alert_id=alert._id) }}">
-                Edit
-            </a>
-            <a class="btn btn-danger" style="width:75px;"
-               href="{{ url_for('alerts.delete_alert',alert_id=alert._id) }}">
-                Delete
-            </a>
+<div class="container">
+    <div id="page-title">
+        <h1 style="text-align:center;">Alerts</h1>
+        <div id="sign-out" style="margin-bottom: 2em;">
+            <a class="btn btn-success" href="{{ url_for('users.logout_user') }}">Sign Out</a>
         </div>
-        {% endfor %}
-
+        <div class="clear-float"></div>
     </div>
 
-    <!-- Option to create new alerts -->
-    <a class="btn btn-success" href="{{ url_for('alerts.new_alert') }}">
-        Create New
-    </a>
-</section>
+    <!-- List of alert items -->
+    <section>
+        <div class="list-group mb3" style="argin-bottom: 30px">
+            {% for alert in alerts %}
+            <div class="list-group-item">
+                <h4>{{ alert.name }}</h4>
+                <div class="alert-buy-now-image" style="float:right;">
+                    <a href="{{ alert.item.url }}"><img src="{{ url_for('static', filename='/images/buy-now.png') }}" height="50"></a><br>
+                </div>
+                <div class="alert-price-info" style="float:left;">
+                    Last price ${{ alert.item.price }}<br>
+                    Alert price ${{ alert.price_limit }}
+                </div>
+                <div class="alert-buttons" style="clear:both;">
+                    <a class="btn btn-secondary" style="width:75px;" href="{{ url_for('alerts.edit_alert',alert_id=alert._id) }}">
+                        Edit
+                    </a>
+                    <a class="btn btn-danger" style="width:75px;" href="{{ url_for('alerts.delete_alert',alert_id=alert._id) }}">
+                        Delete
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
 
+
+
+
+<!-- Option to create new alerts -->
+        <div style="margin-top: 2em;margin-bottom: 4em;">
+<a class="btn btn-success" href="{{ url_for('alerts.new_alert') }}">
+    Create New
+</a>
+            </div>
+
+</section>
+</div>
 {% endblock %}

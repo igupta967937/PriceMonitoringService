@@ -13,13 +13,24 @@ body {
     font-family: "Gill Sans MT";
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
     font-family: "Gill Sans MT";
     font-weight: bold;
     color: #ff0202;
 }
 
+h4,h5,h6 {
+    font-family: "Gill Sans MT";
+    font-weight: bold;
+    color: #44611f;
+}
+
 .btn {
+    background-color: #44611f;
+    border: 1px solid #44611f;
+}
+
+.btn:hover {
     background-color: #ff0202;
     border: 1px solid #ff0202;
 }
@@ -61,6 +72,7 @@ header {
 /* Styles for the home page */
 .jumbotron {
     background-color: #f8f9fa;
+    height: auto;
 }
 
 #home_jumbo {
@@ -72,7 +84,7 @@ header {
 }
 
 #home_jumbo_content > img {
-    height: 100px;
+    height: 300px;
 }
 
 #home_alerts {
@@ -81,33 +93,45 @@ header {
     height: 80vh;
 }
 
+#home_alerts > table {
+    margin: 0px;
+    padding: 0px;
+    width: 100% !important;
+
+}
+
 #home_alerts h2 {
     margin-bottom: 2em;
 }
 
 #home_alerts tr:nth-child(odd) {
-    border-top: 1px solid black;
+    padding-top: 4em;
+
 }
 
 #home_alerts tr:nth-child(even) {
-    border-bottom: 1px solid black;
+    padding-bottom: .3em;
+    border-bottom: .2em solid lightgrey;
+
 }
 
 #home_alerts tr:nth-child(even) > td {
-    padding-bottom: 12px;
-    padding-bottom: 12px;
+
 }
 
 #home_alerts tr:nth-child(even) > td:nth-child(1) {
-    width: 33%;
+    width: 40%;
+    padding: 0;
 }
 
 #home_alerts tr:nth-child(even) > td:nth-child(2) {
-    width: 33%;
+    width: 40%;
+    padding: 0;
 }
 
 #home_alerts tr:nth-child(even) > td:nth-child(3) {
-    width: 33%;
+    width: 20%;
+    padding: 0;
 }
 
 #home_alert_images {
@@ -130,12 +154,12 @@ header {
 /* Styles to supplement responsive behaviors  */
 @media (min-width: 992px) {
     #home_jumbo {
-        height: 90vh;
+        height: auto;
         width: 48%;
     }
 
     #home_alerts {
-        height: 90vh;
+        height: auto;
         width: 48%;
     }
 }
@@ -160,7 +184,7 @@ header {
     }
 
     #home_jumbo_content > h1 {
-        display: none;
+        font-size: 200%;
     }
 
     #bottom_nav {

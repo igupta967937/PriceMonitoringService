@@ -18,14 +18,13 @@ License:      The application is provide herein under the GNU General Public Lic
         <!-- Left side of full screen home page.  Brief description, sign up, or sign in.  -->
         <div id="home_jumbo" class="col-lg jumbotron">
             <div id="home_jumbo_content">
-                <img src="{{ url_for('static', filename='images/shopping-cart.png') }}">
+                <img src="{{ url_for('static', filename='/images/shopping-girl.png') }}">
                 <h1>PriceMonitorService</h1>
                 <p class="lead">Helping you get the best price for all of your online shopping needs.</p>
                 <hr class="my-4"/>
                 <p>Here's how it works:</p>
-                <p>You tell us the products you want to track, and the price you want to pay.</p>
-                <p>We scan online stores and alert you when the price drops below your target price.</p>
-                <p>For a limited time during beta testing, membership is free.</p>
+                <p>You tell us the products you want to track, and the price you want to pay.We scan online stores and alert you when the price drops below your target price.</p>
+
                 <a class="btn btn-primary btn-large btn-success" href="{{ url_for('users.register_user') }}">Sign Up</a>
                 <br><br>
                 <p>Already a member? Sign in below.</p>
@@ -35,12 +34,13 @@ License:      The application is provide herein under the GNU General Public Lic
 
         <!-- Right side of full screen home page.  How the program works and sample price alerts. -->
         <div id="home_alerts" class="col-lg jumbotron">
-            <h4>Set the price you want to pay!</h4>
+            <img src="{{ url_for('static', filename='/images/buy-now.png') }}" height="150">
+            <h3>Set the price you want to pay!</h3>
             <p>Tell us the product and the price you want to pay. We will track online stores and send you an email when
                 your bargain is ready. Once items are set up, prices are tracked, and logged in users can see their
                 items, the latest price for the item on the website, and the price at which the user will received an
                 alert. Users also receive a link on each report to go and purchase the item.</p>
-            <p>To illustrate, here are some items we are tracking from <a href="https://www.bestbuy.com"><img src="{{ url_for('static', filename='images/220px-Best_Buy_Logo.svg.png') }}"></a> online.
+            <p>To illustrate, here are some items we are tracking from the Disney Store online.  A click on the shopping cart will take you to the company product page.
             </p>
             <table>
                 {% for alert in alerts %}
@@ -48,9 +48,9 @@ License:      The application is provide herein under the GNU General Public Lic
                         <td colspan="3"><h6>{{ alert.name }}</h6></td>
                     </tr>
                     <tr>
-                        <td>Price today ${{ alert.item.price }}<br></td>
+                        <td>Price today ${{ alert.item.price }}</td>
                         <td>Alert price ${{ alert.price_limit }}</td>
-                        <td><a href="{{ alert.item.url }}" target="_blank">Buy Now</a></td>
+                        <td><a href="{{ alert.item.url }}" target="_blank"><img src="{{ url_for('static', filename='/images/buy-now.png') }}" height="40"></a></td>
                     </tr>
                 {% endfor %}
             </table>
