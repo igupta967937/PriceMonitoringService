@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d189bee-9774-4bcc-9dc0-88b66d6ebbae" name="Default Changelist" comment="Environment update">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,7 +287,7 @@
       <workItem from="1605960025300" duration="51000" />
       <workItem from="1607028111103" duration="3080000" />
       <workItem from="1607045512635" duration="958000" />
-      <workItem from="1607102380117" duration="1037000" />
+      <workItem from="1607102380117" duration="1431000" />
     </task>
     <task id="LOCAL-00001" summary="Environment update">
       <created>1586176120912</created>
