@@ -54,10 +54,14 @@ class Item(Model):
 
         # The content attribute of the response object contains the website content
         content = response.content
+        print(content)
 
         # BeutifulSoup object used for parsing the html document
         soup = BeautifulSoup(content, "html.parser")
+        print(soup)
 
+        print(self.tag_name)
+        print(self.query)
         # Tag name and query used to retrieve the html element containing the item price
         element = soup.find(self.tag_name, self.query)
 

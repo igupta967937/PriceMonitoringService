@@ -38,4 +38,4 @@ app.register_blueprint(store_blueprint,url_prefix="/stores")
 app.register_blueprint(user_blueprint,url_prefix="/users")
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)
