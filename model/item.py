@@ -50,7 +50,7 @@ class Item(Model):
             'user-agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0", }
 
         # Response object utilizes requests.get() method to retrieve all website information
-        response = requests.get(self.url, headers=HEADERS)
+        response = requests.get(self.url)
 
         # The content attribute of the response object contains the website content
         content = response.content
