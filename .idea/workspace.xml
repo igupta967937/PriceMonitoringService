@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2d189bee-9774-4bcc-9dc0-88b66d6ebbae" name="Default Changelist" comment="Environment update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/alerts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/alerts/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -292,7 +291,8 @@
       <workItem from="1607102380117" duration="8448000" />
       <workItem from="1607114937427" duration="42000" />
       <workItem from="1607115186879" duration="3201000" />
-      <workItem from="1607119154488" duration="1139000" />
+      <workItem from="1607119154488" duration="1494000" />
+      <workItem from="1607123511927" duration="32000" />
     </task>
     <task id="LOCAL-00001" summary="Environment update">
       <created>1586176120912</created>
@@ -312,26 +312,26 @@
     <option name="LAST_COMMIT_MESSAGE" value="Environment update" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1619" height="307" key="GridCell.Tab.0.bottom" timestamp="1607120155050">
+    <state width="1619" height="307" key="GridCell.Tab.0.bottom" timestamp="1607120660790">
       <screen x="1920" y="-762" width="3072" height="1688" />
     </state>
     <state width="1635" height="194" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-762.3072.1688@0.0.1920.1040" timestamp="1607103214295" />
-    <state width="1619" height="307" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-762.3072.1688@1920.-762.3072.1688" timestamp="1607120155050" />
-    <state width="1619" height="307" key="GridCell.Tab.0.center" timestamp="1607120155050">
+    <state width="1619" height="307" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-762.3072.1688@1920.-762.3072.1688" timestamp="1607120660790" />
+    <state width="1619" height="307" key="GridCell.Tab.0.center" timestamp="1607120660790">
       <screen x="1920" y="-762" width="3072" height="1688" />
     </state>
     <state width="1635" height="194" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-762.3072.1688@0.0.1920.1040" timestamp="1607103214295" />
-    <state width="1619" height="307" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-762.3072.1688@1920.-762.3072.1688" timestamp="1607120155050" />
-    <state width="1619" height="307" key="GridCell.Tab.0.left" timestamp="1607120155050">
+    <state width="1619" height="307" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-762.3072.1688@1920.-762.3072.1688" timestamp="1607120660790" />
+    <state width="1619" height="307" key="GridCell.Tab.0.left" timestamp="1607120660789">
       <screen x="1920" y="-762" width="3072" height="1688" />
     </state>
     <state width="1635" height="194" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-762.3072.1688@0.0.1920.1040" timestamp="1607103214294" />
-    <state width="1619" height="307" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-762.3072.1688@1920.-762.3072.1688" timestamp="1607120155050" />
-    <state width="1619" height="307" key="GridCell.Tab.0.right" timestamp="1607120155050">
+    <state width="1619" height="307" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-762.3072.1688@1920.-762.3072.1688" timestamp="1607120660789" />
+    <state width="1619" height="307" key="GridCell.Tab.0.right" timestamp="1607120660790">
       <screen x="1920" y="-762" width="3072" height="1688" />
     </state>
     <state width="1635" height="194" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-762.3072.1688@0.0.1920.1040" timestamp="1607103214295" />
-    <state width="1619" height="307" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-762.3072.1688@1920.-762.3072.1688" timestamp="1607120155050" />
+    <state width="1619" height="307" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-762.3072.1688@1920.-762.3072.1688" timestamp="1607120660790" />
     <state x="444" y="157" key="SettingsEditor" timestamp="1607103197233">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -347,7 +347,7 @@
     <SUITE FILE_PATH="coverage/BargainBuyClub$BargainBuyClub.coverage" NAME="BargainBuyClub Coverage Results" MODIFIED="1581415991297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/PriceMonitoringService$__init____1_.coverage" NAME="flask_app Coverage Results" MODIFIED="1586795748242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/BargainBuyClub$alert_updater.coverage" NAME="alert_updater Coverage Results" MODIFIED="1586171923838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PriceMonitoringService$flask_app.coverage" NAME="flask_app Coverage Results" MODIFIED="1607120306859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PriceMonitoringService$flask_app.coverage" NAME="flask_app Coverage Results" MODIFIED="1607123549578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PriceMonitoringService$database.coverage" NAME="database Coverage Results" MODIFIED="1586789859208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
